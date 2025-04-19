@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace BlazeGen
+namespace BlazeGen.Platforms
 {
     [Application]
     public class MainApplication : MauiApplication

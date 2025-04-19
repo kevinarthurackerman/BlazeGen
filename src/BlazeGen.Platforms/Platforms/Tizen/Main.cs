@@ -2,7 +2,7 @@ using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace BlazeGen
+namespace BlazeGen.Platforms
 {
     internal class Program : MauiApplication
     {

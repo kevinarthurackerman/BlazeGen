@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace BlazeGen
+namespace BlazeGen.Platforms
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

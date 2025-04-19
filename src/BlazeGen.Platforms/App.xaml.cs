@@ -1,4 +1,4 @@
-﻿namespace BlazeGen
+﻿namespace BlazeGen.Platforms
 {
     public partial class App : Application
     {

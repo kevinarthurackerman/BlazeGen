@@ -1,8 +1,8 @@
-﻿using BlazeGen.Services;
+﻿using BlazeGen.Platforms.Services;
 using BlazeGen.Shared.Services;
 using Microsoft.Extensions.Logging;
 
-namespace BlazeGen
+namespace BlazeGen.Platforms
 {
     public static class MauiProgram
     {

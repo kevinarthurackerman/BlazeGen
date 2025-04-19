@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace BlazeGen
+namespace BlazeGen.Platforms
 {
     public class Program
     {
