@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
-    .AddInteractiveWebAssemblyComponents()
-    .AddInteractiveServerComponents();
+    .AddInteractiveServerComponents()
+    .AddInteractiveWebAssemblyComponents();
 
 // Add device-specific services used by the BlazeGen.Shared project
 builder.Services.AddSingleton<IFormFactor, FormFactor>();
