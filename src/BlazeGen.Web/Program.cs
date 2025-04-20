@@ -6,8 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
-    .AddInteractiveServerComponents()
-    .AddInteractiveWebAssemblyComponents();
+    .AddInteractiveServerComponents();
+
+builder.Services.AddHttpClient("", x => x.BaseAddress = new Uri("http://localhost:5027"));
 
 // Add device-specific services used by the BlazeGen.Shared project
 builder.Services.AddSingleton<IFormFactor, FormFactor>();
@@ -29,7 +30,6 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
-    .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(BlazeGen.Shared._Imports).Assembly);
 
 app.Run();

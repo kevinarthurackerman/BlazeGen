@@ -1,0 +1,11 @@
+@BlazeGen.Server_HostAddress = http://localhost:5027
+
+GET {{BlazeGen.Server_HostAddress}}/weather/forecasts/
+Accept: application/json
+
+###
+
+GET {{BlazeGen.Server_HostAddress}}/weather/forecasts/1
+Accept: application/json
+
+###

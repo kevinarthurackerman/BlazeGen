@@ -16,6 +16,8 @@ namespace BlazeGen.Platforms
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 });
 
+            builder.Services.AddHttpClient("", x => x.BaseAddress = new Uri("http://localhost:5027"));
+
             // Add device-specific services used by the BlazeGen.Shared project
             builder.Services.AddSingleton<IFormFactor, FormFactor>();
 
