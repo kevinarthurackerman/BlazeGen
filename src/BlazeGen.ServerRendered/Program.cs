@@ -1,6 +1,6 @@
 using BlazeGen.Shared.Services;
-using BlazeGen.Web.Components;
-using BlazeGen.Web.Services;
+using BlazeGen.ServerRendered.Components;
+using BlazeGen.ServerRendered.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

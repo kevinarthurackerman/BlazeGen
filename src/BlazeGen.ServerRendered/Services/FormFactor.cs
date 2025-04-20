@@ -1,6 +1,6 @@
 using BlazeGen.Shared.Services;
 
-namespace BlazeGen.Web.Services
+namespace BlazeGen.ServerRendered.Services
 {
     public class FormFactor : IFormFactor
     {

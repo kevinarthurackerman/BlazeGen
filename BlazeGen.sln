@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazeGen.Platforms", "src\B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazeGen.Shared", "src\BlazeGen.Shared\BlazeGen.Shared.csproj", "{78B6E0EC-B40C-470A-9C11-3DF5DA4921A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazeGen.Web", "src\BlazeGen.Web\BlazeGen.Web.csproj", "{41885E6E-F978-4216-966F-EEE9A16C9771}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazeGen.ServerRendered", "src\BlazeGen.ServerRendered\BlazeGen.ServerRendered.csproj", "{41885E6E-F978-4216-966F-EEE9A16C9771}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazeGen.Server", "src\BlazeGen.Server\BlazeGen.Server.csproj", "{A2039209-7983-4711-91AA-C0D3105B1226}"
 EndProject
