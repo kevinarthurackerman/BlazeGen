@@ -71,14 +71,15 @@
     <ProjectReference Include="..\BlazeGen.Shared\BlazeGen.Shared.csproj" />
   </ItemGroup>
 
-  <!-- Handle source generation -->
-  <PropertyGroup>
-	<EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
-	<CompilerGeneratedFilesOutputPath>_generated</CompilerGeneratedFilesOutputPath>
-  </PropertyGroup>
-  <ItemGroup>
-	<Compile Remove="$(CompilerGeneratedFilesOutputPath)/**/*.cs" />
-	<None Include="$(CompilerGeneratedFilesOutputPath)/**/*.cs" />
-  </ItemGroup>
+  <Target Name="SourceGenerators" BeforeTargets="PreBuildEvent">
+    <PropertyGroup>
+	  <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+	  <CompilerGeneratedFilesOutputPath>_generated</CompilerGeneratedFilesOutputPath>
+    </PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="$(CompilerGeneratedFilesOutputPath)/**/*.cs" />
+	  <None Include="$(CompilerGeneratedFilesOutputPath)/**/*.cs" />
+	</ItemGroup>
+  </Target>
 
 </Project>
